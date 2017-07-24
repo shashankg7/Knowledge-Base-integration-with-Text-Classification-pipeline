@@ -21,6 +21,56 @@ Considering an analogy to std. LTR use-case (query-document matching, with a que
 * A pointwise LTR model is trained to match the article with it's category.
 
 
+#### Text Classification Category to KB entity mapping
+
+##### Mappings for Freebase
+
+'Programming languages' = '/en/programming_language'
+'Real time and embedded systems' = '/en/embedded_system'
+'Scientific computing' = '/en/scientific_computing'
+'Natural language and speech' = '/en/natural_language_processing'
+'Machine learning and pattern recognition' = '/en/machine_learning'
+'Operating systems' = '/en/operating_system'
+'World wide web' = '/en/world_wide_web'
+'Bioinformatics and computational biology' = '/en/bioinformatics'
+'Security and privacy'= '/en/internet_security'
+'Distributed and parallel computing' = '/en/parallel_computing'
+'Databases' = '/en/database'
+'Simulation' = '/en/simulation'
+'Algorithms and theory' = '/en/algorithm'
+'Computer education' = '/en/computer_literacy'
+'Human-computer interaction'= '/en/human_computer_interaction'
+'Hardware and architecture'= '/en/hardware_architecture'
+'Networks and communications' = '/en/computer_network'
+'Artificial intelligence' = '/en/artificial_intelligence'
+'Data mining' = '/en/data_mining'
+'Computer vision' = '/en/computer_vision'
+'Simulation' = '/en/simulation'
+'Software engineering' = '/en/software_engineering'
+'Information retrieval'= '/en/information_retrieval'
+'Multimedia' = '/en/multimedia'
+'Graphics' ='/en/graphics'
+
+##### Mappings for Wikipedia
+'Programming languages' = 'Programming language'; ['Real time and embedded systems'] = ['Modeling and Analysis of Real Time and Embedded systems'];
+['Scientific computing'] = ['Computational science'];
+['Natural language and speech'] = ['Natural language processing','Speech recognition'];
+['Machine learning and pattern recognition'] = ['Machine learning','Pattern recognition']; ['Operating systems'] = ['Operating system'];
+['World wide web'] = ['World Wide Web'];  ['Bioinformatics and computational biology'] = ['Bioinformatics','Computational biology'];
+['Security and privacy']=['Information security', 'Internet privacy']; mapFields['Distributed and parallel computing'] = ['Distributed computing','Parallel computing'];
+['Databases'] = ['Database'];
+['Simulation'] = ['Computer simulation'];
+['Algorithms and theory'] = ['Algorithm', 'Theoretical computer science'];
+['Computer education']=['Computer literacy'];
+['Human-computer interaction']= [];
+['Hardware and architecture']=['Hardware architecture'];
+['Networks and communications'] = ['Computer network', 'Telecommunications engineering']
+['Artificial intelligence'] = ['Artificial intelligence']; mapFields['Data mining'] = ['Data mining'];
+['Computer vision'] = ['Computer vision']; ['Simulation'] = ['Simulation'] ; ['Software engineering'] = ['Software engineering'];
+['Information retrieval']=['Information retrieval']; mapFields['Multimedia'] = ['Multimedia']; mapFields['Graphics'] = ['Graphics']
+
+
+
 #### Instructions:
 
 * Download the [wikipedia data dump](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2]) in xml format and put it in the current folder.
