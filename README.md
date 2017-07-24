@@ -20,6 +20,12 @@ Considering an analogy to std. LTR use-case (query-document matching, with a que
 
 * A pointwise LTR model is trained to match the article with it's category.
 
+#### Dataset Link:
+
+The dataset used in the paper, i.e the scientific articles can be found from the following link:
+
+https://drive.google.com/file/d/0B-7peEFiNjnUZk5DV3RzZlZveGM/view?usp=sharing
+
 
 #### Text Classification Category to KB entity mapping
 
